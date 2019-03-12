@@ -1,0 +1,9 @@
+spring:
+  data:
+    mongodb:
+      user: user
+      password: pwd
+      host: localhost
+      port: 27017
+      database: without-state-machine
+      uri: mongodb://${spring.data.mongodb.user}:${spring.data.mongodb.password}@${spring.data.mongodb.host}:${spring.data.mongodb.port}/${spring.data.mongodb.database}
